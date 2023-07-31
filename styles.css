@@ -46,6 +46,7 @@ h1 {
 p.descricao {
   font-size: 150%;
   padding: 0px;
+  text-align: center;
 }
 
 div.formulario {
