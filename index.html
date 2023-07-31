@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Cormorant+Garamond:wght@300&family=Crimson+Text:wght@600&family=Handjet:wght@500&family=Hind+Madurai:wght@300&family=Jost&family=Manrope:wght@300&family=Montserrat:wght@200&family=Pacifico&family=Raleway:wght@300&family=Roboto:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="resultado">
+      <p class="palpites"></p>
+      <p class="ultimoResul"></p>
+      <p class="baixoAlto"></p>
+    </div>
+
+    <img src="./assets/stitch.gif" alt="Stitch" class="estados" />
+
+    <div id="jogo">
+      <h1 class="titulo">Jogo de Adivinhação</h1>
+      <p class="descricao">
+        Selecionamos um número aleatório entre 1 e 100. Veja se consegue
+        adivinhar em 10 voltas ou menos. Diremos se o seu palpite foi muito alto
+        ou muito baixo.
+      </p>
+      <div class="formulario">
+        <label for="campoPalpite">Dê seu palpite</label>
+        <input
+          type="number"
+          min="1"
+          max="100"
+          required
+          id="campoPalpite"
+          class="campoPalpite"
+        />
+        <br />
+        <input
+          type="button"
+          value="Palpitar"
+          onclick="conferirPalpite()"
+          class="palpiteEnviar"
+        />
+      </div>
+
+      <br />
+
+      <div class="btnReinicio"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

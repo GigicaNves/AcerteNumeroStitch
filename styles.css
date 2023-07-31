@@ -1,0 +1,119 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Comfortaa", cursive;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Crimson Text", serif;
+  font-family: "Handjet", cursive;
+}
+
+img.estados {
+  width: 20%;
+  margin-bottom: 3%;
+}
+
+div#jogo {
+  margin: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 450%;
+  color: #1b80c7;
+  padding: 0px;
+  margin: 0px;
+  text-shadow: 0.1em 0.1em 0.2em white;
+}
+
+p.descricao {
+  font-size: 150%;
+  padding: 0px;
+}
+
+div.formulario {
+  gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.resultado {
+  width: 100%;
+  height: auto;
+  font-size: 150%;
+  display: flex;
+  justify-content: space-around;
+}
+
+label {
+  font-size: 150%;
+}
+
+input.palpiteEnviar {
+  font-size: 150%;
+  font-family: "Comfortaa", cursive;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Crimson Text", serif;
+  font-family: "Handjet", cursive;
+  color: #1b80c7;
+}
+
+input.palpiteEnviar:hover {
+  color: #01447d;
+}
+
+button.reiniciar {
+  color: #1b80c7;
+  width: 100%;
+  margin: 5%;
+  font-size: 150%;
+  font-family: "Comfortaa", cursive;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Crimson Text", serif;
+  font-family: "Handjet", cursive;
+}
+
+button.reiniciar:hover {
+  color: #01447d;
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-size: 250%;
+  }
+
+  div.resultado {
+    width: 70%;
+    gap: 7px;
+  }
+
+  img.estados {
+    width: 40%;
+  }
+
+  h1 {
+    font-size: 400%;
+  }
+
+  p.descricao {
+    font-size: 140%;
+  }
+}
